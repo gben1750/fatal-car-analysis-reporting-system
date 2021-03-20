@@ -1,0 +1,37 @@
+Package: fatalcaranalysiisreports
+Type: Package
+Title: Fatal Car Accident Reporting System (FCARS)
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Person1",
+           family = "Creator",
+           role = c("aut", "cre"),
+           email = "person1@fcars.com"),
+    person(given = "Person1",
+           family = "Contributor",
+           role = c("ctb"),
+           email = "person1@fcars.com")
+    )
+Maintainer: Person1 <person1@fcars.com>
+Description: This package graphically displays the locations of fatal accidents recorded in the US National Highway Traffic
+    safety Administration's Fatal Analysis Reporting System (FARS). Both the year and state can be modified to 
+    generate plots for different combinations of state and year.
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat
+License: GPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: 
+    magrittr,
+    readr,
+    dplyr,
+    tibble,
+    tidyr,
+    maps,
+    graphics
+VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)

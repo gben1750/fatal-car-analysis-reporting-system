@@ -1,0 +1,5 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^fars_functions_v2\.R$
+^data-raw$
+^doc$

@@ -1,0 +1,42 @@
+---
+title: "Overview"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Overview}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r, eval = FALSE, include = FALSE}
+knitr::opts_knit$set(root.dir = '..')
+```
+
+```{r setup}
+library(fatalcaranalysiisreports)
+knitr::opts_chunk$set(warning = TRUE)
+```
+## Introduction
+This package graphically displays the locations of fatal accidents recorded in the US National Highway Traffic
+Safety Administration's Fatal Analysis Reporting System (FARS). The function accepts a state number and year as parameters.
+
+The lastest development version of the package can also be loaded directly from GitHub using the `devtools` package:
+
+```{r eval = FALSE}
+library(devtools)
+install_github("gben1750/fatalcaranalysiisreports")
+library(fatalcaranalysiisreports)
+```
+### Example
+The grpahical display of accidents for Albama in the year 2013 can be shown in the following example.
+
+*    fars_map_state (stateid, year)
+``` {r example}
+fars_map_state(1, 2013)
+```
