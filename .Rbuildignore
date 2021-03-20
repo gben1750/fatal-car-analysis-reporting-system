@@ -3,3 +3,4 @@
 ^fars_functions_v2\.R$
 ^data-raw$
 ^doc$
+^\.travis\.yml$

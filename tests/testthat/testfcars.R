@@ -8,3 +8,9 @@ test_that("Test number of records in 2013 dataset should equal 30202", {
   tbl <- fars_read(fileName)
   expect_equal(nrow(tbl), 30202)
 })
+
+test_that("Test number of records in 2014 dataset should equal 30056", {
+  fileName = 'accident_2014.csv'
+  tbl <- fars_read(fileName)
+  expect_equal(nrow(tbl), 30056)
+})
